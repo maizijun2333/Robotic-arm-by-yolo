@@ -1,6 +1,12 @@
 # Robotic-arm-by-yolo
 yolo. Jetson Nano. Robotic arm
 
+本项目对环境的要求如下
+
+    能在Jetson Nano运行YOLOv8即可运行本项目。
+    基本无需其他环境安装，因此也没有给出
+
+
 本项目所用硬件如下
 
     Jetson Nano。
@@ -15,7 +21,7 @@ yolo. Jetson Nano. Robotic arm
     arm_send.py用于用串行总线舵机控制器指定数据格式控制机械臂运动。
     get_cmxyz.py用于YOLO目标检测并返回目标检测框。
     get_IK用于逆运动学计算旋转角。
-    connect.py相当于main函数，用于运行。
+    connect.py直接运行就行了
 
 
 下面介绍原理，YOLO自己训练模型（此处不做介绍），通过在Jetson 上运行YOLO得到对应目标的边界框，通过单目测距计算出大概距离，之后从摄像头转换到机械臂坐标系（以云台中心为坐标系原点），再进行逆运动学求解旋转角，最后通过串口传输控制信息即可驱动机械臂运动抓取。
