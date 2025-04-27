@@ -2,7 +2,8 @@
 yolo. Jetson Nano. Robotic arm
 
 本项目所用硬件如下
-    Jetson Nano
+
+    Jetson Nano。
     幻尔科技ArmPi FPV智能视觉机械臂，去掉了树莓派，转接Jetson Nano进行物品识别与控制。
     幻尔科技串行总线舵机控制器，用以控制串行机械臂。
     一个CSI摄像头。
