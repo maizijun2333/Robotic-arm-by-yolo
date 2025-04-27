@@ -1,5 +1,4 @@
 # Robotic-arm-by-yolo
-yolo. Jetson Nano. Robotic arm
 
 本项目对环境的要求如下
 
